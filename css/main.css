@@ -15,7 +15,7 @@ header{
    background-color: rgb(36, 53, 63);
 }
 
-h1{
+h1 , h2{
     color: rgb(23, 162, 184);
 }
 
@@ -38,12 +38,12 @@ h1{
 
 }
 input{
-    color: blue;
-    background-color: aqua;
+    color: white !important;
+    background-color: transparent !important;
 }
 
 ::placeholder{
-    color: rgb(222, 24, 24);
+    color: rgb(159, 153, 153) !important;
 
 }
 
@@ -53,14 +53,74 @@ form{
 
 }
 
-.signUpBtn{
+.btn{
     background-color: rgb(36, 53, 63);
     color: rgb(23, 162, 184);
     border: 1px solid rgb(23, 162, 184);
     transition: all 500ms;
 }
 
-.signUpBtn:hover {
+.btn:hover {
     color: white;
     background-color: rgb(23, 162, 184);
+}
+
+.navbar h1 {
+    color: white;
+    /* display: inline-block; */
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    /* margin-right: 1rem; */
+    font-size: 1.25rem;
+    /* line-height: inherit; */
+    /* white-space: nowrap; */
+}
+
+.navbar{
+    box-shadow: 1px 1px 20px 8px rgb(25, 26, 26);
+    height: 56px;
+    padding: 8px 16px;
+}
+
+.logoutBtn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #ffc107;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    background-color: transparent;
+    color: gray;
+    transition: all 500ms;
+
+}
+
+.logoutBtn:hover{
+    color: white;
+    background-color: #ffc107;
+}
+
+
+#footerBtn{
+    background-color: transparent;
+    color: white;
+    border: 0;
+    transition: all 500ms;
+    margin-top: 24px;
+    padding-block: 0;
+    /* font-size: 1rem; */
+    height: 24px;
+}
+
+#footerBtn:hover{
+
+    border-bottom: 1px white solid;
 }

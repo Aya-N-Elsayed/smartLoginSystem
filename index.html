@@ -26,13 +26,23 @@
     
         <!-- todo header section  -->
 
+        <nav class="navbar  container-fluid d-none ">
+            <div class="container ">
+                <h1 class="text-uppercase">smart login</h1>
+                <div class="button text-center">
+                    <button type="button" class="logoutBtn w-100"  onclick="logout()">Logout</button>
+                </div>
+                
+            </div>
+        </nav>
+
         <header class="home container " id="home">
             <div class="homeContent ">
 
                 
 
 
-            <form class="siteForm w-75  mx-auto p-5 m-5 ">
+            <form class="siteForm signForm w-75  mx-auto p-5 m-5 ">
                 <div class="formTitle text-center my-5">
                     <h1>
                         Smart Login system
@@ -57,15 +67,35 @@
                 <p class="signUpMesg text-center"></p>
 
                 <div class="button text-center">
-                    <button type="button" class="btn signUpBtn w-100" id="signUpBtn" onclick="add()">Sign Up</button>
+                    <button type="button" class="btn signUpBtn w-100" id="Btn" onclick="pageName()">Sign Up</button>
                 </div>
 
-                <p class="text-center mt-4">You have an account?</p>
+                <div class="d-flex justify-content-center ">
+                    <p class="text-center whiteMsg  mt-4">You have an account? </p>
+                    <button type="button" class=" haveAccBtn " id="footerBtn">Sign in</button>
+                </div>
             
             </form>
 
                 
 
+
+            <form class="siteForm welcomePage w-75  mx-auto p-5 m-5 d-none ">
+                
+                <div class="formTitle text-center my-5">
+                    <h2>
+                        welcome sherry
+                    </h2>
+                </div>
+
+            
+                <p class="signUpMesg text-center"></p>
+            
+
+            
+
+            
+            </form>
 
 
                 
